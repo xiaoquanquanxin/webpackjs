@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>概念</title>
+</head>
+<body>
+<h3>核心概念</h3>
+<ol>
+    <li>webpack是一个js应用程序的静态模块打包器.</li>
+    <li>webpack处理应用程序时,它会递归的构建一个依赖关系图,包括应用程序需要的每个模块,然后把所有模块打包成一个或多个bundle.</li>
+</ol>
+<ol>
+    <li>入口.</li>
+    <li>输出.</li>
+    <li>loader.</li>
+    <li>插件.</li>
+</ol>
+<h4>entry入口</h4>
+<ol>
+    <li>入口起点指示webpack应该使用哪个模块,来作为构建内部以来图的开始.</li>
+    <li>进入起点后,webpack会找出有哪些模块和库是入口起点所依赖的.</li>
+</ol>
+<h4>output出口</h4>
+<ol>
+    <li>output属性高所webpack在哪里输出它所创建的bundle,以及如何命名这些文件.</li>
+</ol>
+<h4>loader载入器</h4>
+<ol>
+    <li>loader用于转换某些类型的模块,让webpack能够去处理那些非js文件.</li>
+    <li>可以将所有类型的文件转为webpack能够处理的有效模块,然后利用webpack的打包能力对其进行处理.</li>
+    <li>loader将所有类型的文件 转换为 应用程序的依赖图可以直接引用的 模块.</li>
+</ol>
+<h4>plugins插件</h4>
+<ol>
+    <li>拓展.功能强大,覆盖范围广泛.</li>
+</ol>
+<script src="../loadJs.js"></script>
+</body>
+</html>
