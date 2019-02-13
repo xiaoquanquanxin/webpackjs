@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>manifest载货单</title>
+</head>
+<body>
+<ol>
+    <li>在webpack构建的应用程序或站点中,有三种主要的代码类型:</li>
+    <li>你的或你的团队的源码.</li>
+    <li>你的源码依赖的三方代码.</li>
+    <li>webpack的runtime和manifest,管理所有模块的交互.</li>
+</ol>
+<h3>runtime</h3>
+<p>在浏览器运行时,webpack用来连接模块化的应用程序的所有代码.包含交互时连接模块所需的加载和解析逻辑.</p>
+<h3>Manifest</h3>
+<ol>
+    <li>实现index.html,bundles文件,这些模块管理和交互的功能.</li>
+    <li>解析器开始执行,即系和映射应用程序时,它会保留所有模块的详细要点.</li>
+    <li>当打包完成并开发到浏览器时,它会在运行时通过manifest来解析和加载模块.</li>
+    <li>import或require语句都会转为__webpack_require__方法,此方法指向模块标识符.</li>
+</ol>
+<h3>问题</h3>
+<ol>
+    <li>如果你决定通过使用浏览器缓存来改善项目的性能，理解这一过程将突然变得尤为重要.</li>
+    <li>通过使用 bundle 计算出内容散列(content hash)作为文件名称.</li>
+    <li>这样在内容或文件修改时，浏览器中将通过新的内容散列指向新的文件，从而使缓存无效.</li>
+    <li>这是因为runtime和manifest的注入在每次构建都会发生变化.</li>
+</ol>
+</body>
+</html>

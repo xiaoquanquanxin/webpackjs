@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>热替换</title>
+</head>
+<body>
+<h3>模块热替换 HMR</h3>
+<ol>
+    <li>在应用程序运行过程中替换,添加或删除模块,而无需重新加载整个页面,有几种方式:</li>
+    <li>保留在完全重新加载页面使丢失的应用程序的状态.</li>
+    <li>只更新变更内容.</li>
+    <li>调整样式更快.</li>
+</ol>
+<h4>如何运行</h4>
+<p>在应用程序中</p>
+<ol>
+    <li>应用程序代码要求HMR runtime检测更新.</li>
+    <li>HMR runtime异步下载更新,然后通知应用程序代码.</li>
+    <li>应用程序代码要求HMR runtime应用更新.</li>
+    <li>HMR runtime同步更新.</li>
+</ol>
+<p>在编译器中</p>
+<ol>
+    <li>更新后的manifest.</li>
+    <li>一个或多个更新后的chunk.</li>
+</ol>
+
+</body>
+</html>
